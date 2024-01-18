@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userInput = prompt("Nhập vào một chuỗi:");
+let charToCount = prompt("Nhập vào một ký tự:");
+
+let countCharacterOccurrences = function (str, char) {
+    let charCount = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === char) {
+            charCount++;
+        }
+    }
+
+    return charCount;
+};
+
+let result = countCharacterOccurrences(userInput, charToCount);
+console.log("Số lần xuất hiện của ký tự '" + charToCount + "' trong chuỗi là: " + result);
+
+    </script>
+</body>
+</html>

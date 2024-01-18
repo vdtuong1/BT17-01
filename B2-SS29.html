@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["táo", "chuối", "cam", "dâu tây", "kiwi", "việt quất"];
+
+let findLongestElement = function (array) {
+    let longestElement = "";
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length > longestElement.length) {
+            longestElement = array[i];
+        }
+    }
+
+    return longestElement;
+};
+
+let result = findLongestElement(arr);
+console.log("Phần tử có độ dài lớn nhất trong mảng là: " + result);
+
+    </script>
+</body>
+</html>

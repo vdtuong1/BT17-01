@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = [5, 4, 7, 2, 8, 7, 3];
+  let max_val = num.reduce(function(accumulator, element){
+      return (accumulator < element) ? accumulator : element
+  });
+let max_val = num.reduce(function(accumulator, element){
+  return (accumulator > element) ? accumulator : element
+});
+console.log(num);
+console.log("min= ",max_val);
+console.log(num);
+console.log("max= ",max_val);
+
+    </script>
+</body>
+</html>
